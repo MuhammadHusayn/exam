@@ -1,0 +1,343 @@
+@font-face {
+    font-family: 'Product Sans';
+    src: url('../fonts/ProductSans-Bold.woff2') format('woff2'),
+        url('../fonts/ProductSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Product Sans';
+    src: url('../fonts/ProductSans-Regular.woff2') format('woff2'),
+        url('../fonts/ProductSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Product Sans';
+    src: url('../fonts/ProductSans-Italic.woff2') format('woff2'),
+        url('../fonts/ProductSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Product Sans';
+    src: url('../fonts/ProductSans-BoldItalic.woff2') format('woff2'),
+        url('../fonts/ProductSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* GENERAL STYLES */
+html {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+body {
+	padding: 0;
+	margin: 0;
+	margin-top: 90px;
+	font-family: 'Product Sans', 'Arial', sans-sarif;
+	font-size: 16px;
+	line-height: 24px;
+}
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+.container {
+	max-width: 1148px;
+	padding-left: 24px;
+	padding-right: 24px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.styled-link {
+	background-color: #00BAFC;
+	border-radius: 5px;
+	color: #FFFFFF;	
+	font-weight: bold;
+	text-decoration: none;
+	padding: 8px 16px;
+}
+
+/* NAVIGATION */
+
+.site-header {
+	position: fixed;
+	z-index: 50;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	width: 100%;
+	padding: 5px 0;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+.site-header-basic {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.left-side-header img {
+	display: block;
+}
+.left-side-header img:hover {
+	opacity: 0.8;
+}
+.right-side-header {
+	display: flex;
+	align-items: center;
+}
+.menubar {
+	display: flex;
+	margin: 0;
+	padding: 0;	
+	margin-right: 16px;
+	list-style-type: none;
+}
+.menubar li {
+	padding: 16px;
+}
+
+.menubar a {
+	text-decoration: none;
+	color: #000000;
+}
+.site-phone {
+	font-weight: bold;
+	padding: 8px 16px;
+}
+/* -----------------------------MAIN-------------------------- */
+/* SITE-INTRO */
+main {
+	/*z-index: 1;*/
+}
+
+.site-intro {
+	display: flex;
+	justify-content: space-between;
+	padding: 80px 0;
+}
+.site-intro .intro-text-side {
+	width: 500px;
+	padding-right: 50px;
+}
+.intro-text-side h2 {
+	font-size: 30px;
+	line-height: 130%;
+}
+.intro-text-side iframe {
+}
+.intro-video-side {
+	padding-bottom: 0;
+	overflow: hidden;
+}
+
+
+/* SITE_SERVICES */
+
+.services {
+	padding: 56px 0;
+	position: relative;
+}
+.services::before {
+	position: absolute;
+	content: "";
+	margin: 0 auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 300px;
+	height: 3px;
+	background-color: #EEEEEE;
+}
+.services::after {
+	position: absolute;
+	content: "";
+	margin: 0 auto;
+	top: 100%;
+	left: 0;
+	right: 0;
+	width: 300px;
+	height: 3px;
+	background-color: #EEEEEE;
+}
+.services-header {
+	text-align: center;
+
+}
+.services-header h3 {
+	font-size: 24px;
+	line-height: 130%;
+	margin-bottom: 16px;
+	margin-top: 0;
+}
+.services-main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-top: 24px;
+}
+.services-main li {
+	padding: 24px 58px;
+	width: 320px;
+	text-align: center;
+	margin-left: 68px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+.services-main li:nth-child(1) {
+	margin-left: 0;
+
+}
+.services-main li:nth-child(4) {
+	margin-left: 0;
+	margin-top: 48px;
+	margin-left: auto;
+
+}
+.services-main li:nth-child(5) {
+	margin-top: 48px;
+	margin-right: auto;
+}
+.services-main li img {
+	display: block;
+	max-width: 100%;
+}
+.services-main li h3 {
+	font-size: 20px;
+	line-height: 130%;
+}
+.services-footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 40px;
+}
+.services-footer a {
+	display: block;
+}
+.order {
+	margin-right: 16px;
+}
+.to-servives-link {
+	color: #00BAFC;
+}
+
+
+
+/* COMPANY - SYSTEM */
+
+
+.company-system {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 56px 60px;
+}
+.company-system-header {
+	text-align: center;
+	width: 710px;
+}
+.company-system-header h3 {
+	font-size: 24px;
+	line-height: 130%;
+}
+.company-system-steps {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.company-system-steps li {
+	display: flex;
+	align-items: center;
+}
+.company-system-steps li img {
+	margin-right: 32px;
+	max-width: 100%;
+	display: block;
+}
+.company-system-steps li:nth-child(even) img {
+	margin-left: 32px;
+	margin-right: 0;
+}
+.company-system-steps li h4 {
+	margin-bottom: 0;
+	font-size: 20px;
+	line-height: 130%;
+}
+.company-system .order {
+	margin-top: 40px;
+}
+
+
+/* ORDER SECTION */
+
+.order-section {
+	background-color: #00BAFC;
+	margin-bottom: 0;
+}
+.order-section-basic {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 56px 250px;
+}
+
+.order-section-basic .text-side {
+	text-align: center;
+	color: #FFFFFF;
+}
+.order-section-basic .text-side h3 {
+	font-size: 24px;
+	line-height: 130%;
+}
+.order-section-basic form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: auto;
+	padding: 24px;
+	border-radius: 5px;
+	background-color: #fff;
+}
+.order-section-basic form .input-style {
+	width: 300px;
+	padding: 16px;
+	margin-bottom: 16px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	background-color: #F3F3F3;
+}
+
+
+/* SITE_FOOTER */
+
+.site-footer {
+	margin-top: 0;
+	background-color: black;
+	color: white;
+}
+.site-info h3 {
+	margin: 0;
+	/*color: white;*/
+}
